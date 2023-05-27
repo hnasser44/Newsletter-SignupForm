@@ -167,7 +167,7 @@ button:hover {
 @media all and (min-width:800px) 
 {
     body {
-        background-color: var(--Grey);
+        background-color: var(--Dark-Slate-Gray);
         display: flex;
         justify-content: center;
         align-items: center;
