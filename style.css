@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Gray: hsl(234, 29%, 20%);
+    --Charcoal-Gray: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.card-img img{
+    width: 100%;
+}
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--Charcoal-Gray);
+    background-color: var(--White);
+}
+
+.newsletter {
+    margin: 1rem 1.5rem;
+}
+
+.newsletter h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    font-size: 17.4px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3rem;
+    margin-top: 1.5rem;
+}
+
+.ul div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+
+.ul div p {
+    font-size: 1rem;
+}
+
+.ul img {
+    min-width: 10px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-top: 1.3rem;
+}
+
+form label {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+form input {
+    padding: 1.3rem;
+    border: 1px solid var(--Grey);
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+form input[data-error="true"] {
+    border-color: var(--tomato);
+    color: var(--tomato);
+    background-color: hsl(2, 33%, 84%);
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+form div span {
+    color: var(--tomato);
+    opacity: 0;
+}
+
+
+
+button {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Dark-Slate-Gray);
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color .3s ease-in-out;
+
+}
+
+button:hover {
+    background-color: var(--tomato);
+}
+
+
+
+.success-card {
+    margin: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.success-card h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1
+}
+
+.success-card p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.success-card p span {
+    font-weight: 700;
+}
+
+.success-card button {
+    width: 100%;
+}
+
+@media all and (min-width:800px) 
+{
+    body {
+        background-color: var(--Grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+
+    article {
+        margin: 2rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: var(--White);
+        border-radius: 1rem;
+        align-items: stretch;
+        max-width: 800px;
+
+    }
+
+    .card-img {
+        flex: 1 1 100%;
+    }
+
+    .newsletter {
+        flex: 1 1 100%;
+    }
+
+    .success-card h2 {
+        font-size: 3rem;
+    }
+
+    
+
+    
+}
